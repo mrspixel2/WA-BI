@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html>
+
+
+<br>
+
+<div class="result" align="center">
+
+
+</div>
+<iframe width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiNDkwNDlkZDAtNzJhZi00ZTA3LWEyNmUtYzUyMTUxYTNlNjM5IiwidCI6IjllMzYyMjdiLTYyOTgtNDVmNy1hMDVhLWRiOTIxNDBkNjI5ZiJ9&pageName=ReportSection466015a9d20104047dbe" frameborder="0" allowFullScreen="true"></iframe>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<div id="plotly-timeseries"></div>
+<script>
+var graph = {{ result | safe }};
+Plotly.plot('plotly-timeseries', graph, {});
+</script>
+</html>
